@@ -1,0 +1,23 @@
+{
+  "name": "figurama-server",
+  "version": "1.0.0",
+  "description": "Figurama API",
+  "main": "server.js",
+  "repository": "https://github.com/gasandov/web103_finalproject",
+  "author": "Germán Sandoval",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon --require dotenv/config server.js",
+    "start": "node server.js",
+    "migrations": "cd config && node --require dotenv/config ../migrations/index.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "pg": "^8.12.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
