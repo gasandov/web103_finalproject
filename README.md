@@ -1,8 +1,8 @@
-# [your app name here]
+# [Figurama]
 
 CodePath WEB103 Final Project
 
-Designed and developed by: [your names here]
+Designed and developed by: [Germán Sandoval]
 
 🔗 Link to deployed app:
 
@@ -10,37 +10,31 @@ Designed and developed by: [your names here]
 
 ### Description and Purpose
 
-[text goes here]
+Figurama it's an online store that sells diverse figures, e.g anime, movies, games, etc.
 
 ### Inspiration
 
-[text goes here]
+I'm a avid collector, and from time to time I purchase figures for my collection.
 
 ## Tech Stack
 
-Frontend:
+Frontend: JavaScript, React
 
-Backend:
+Backend: JavaScript, Node.js, Express.js, PostgreSQL
 
 ## Features
 
-### [Name of Feature 1]
+### [See all products]
 
-[short description goes here]
+As a [buyer/seller] I'm able to see all purchasable products
 
-[gif goes here]
+### [Filter and sort products]
 
-### [Name of Feature 2]
+As a [buyer/seller] I'm able to filter and sort the purchasable products
 
-[short description goes here]
+### [Add, Edit and Delete products]
 
-[gif goes here]
-
-### [Name of Feature 3]
-
-[short description goes here]
-
-[gif goes here]
+As a [seller] I'm able to add, edit and delete products on the page
 
 ### [ADDITIONAL FEATURES GO HERE - ADD ALL FEATURES HERE IN THE FORMAT ABOVE; you will check these off and add gifs as you complete them]
 
