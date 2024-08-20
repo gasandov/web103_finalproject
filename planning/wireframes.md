@@ -6,16 +6,16 @@ Reference the Creating an Entity Relationship Diagram final project guide in the
 
 [👉🏾👉🏾👉🏾 List the pages you expect to have in your app, with a ⭐ next to pages you have wireframed]
 
-## Wireframe 1: [page title]
+## Wireframe 1: [Catalog]
 
-[👉🏾👉🏾👉🏾 include wireframe 1]
+![catalog](catalog.png)
 
-## Wireframe 2: [page title]
+## Wireframe 2: [Product Edition]
 
-[👉🏾👉🏾👉🏾 include wireframe 2]
+![product_edition](product_edition.png)
 
 ## Wireframe 3: [page title]
 
-[👉🏾👉🏾👉🏾 include wireframe 3]
+![cart](cart.png)
 
 [👉🏾👉🏾👉🏾 include more wireframes as desired]
