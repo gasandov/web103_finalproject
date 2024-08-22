@@ -1,7 +1,7 @@
 {
-  "name": "figurama-server",
+  "name": "expenses-mgmt-server",
   "version": "1.0.0",
-  "description": "Figurama API",
+  "description": "Expenses management server",
   "main": "server.js",
   "repository": "https://github.com/gasandov/web103_finalproject",
   "author": "Germán Sandoval",
