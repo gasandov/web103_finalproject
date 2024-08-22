@@ -1,9 +1,15 @@
-import productsMigration from "./products.js";
+import accountsMigration from "./accounts.js";
+import categoriesMigration from "./categories.js";
+import expensesMigration from "./expenses.js";
 import usersMigration from "./users.js";
 
 async function main() {
   await usersMigration();
-  await productsMigration();
+  await categoriesMigration();
+  await accountsMigration();
+  await expensesMigration();
+
+  process.exit(0);
 }
 
 main();
