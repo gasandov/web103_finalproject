@@ -1,6 +1,7 @@
 import { useState } from "react";
 
-import { Input } from "../../elements/Input";
+import { Button } from "../../atoms/Button";
+import { Input } from "../../atoms/Input";
 
 import expensesAPI from "../../../services/expenses-api";
 
@@ -38,7 +39,10 @@ export default function ExpensesForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form
+      onSubmit={handleSubmit}
+      className="p-4 border flex flex-col gap-y-4 rounded-md max-w-xl my-6 mx-auto"
+    >
       <Input
         name="name"
         label="Name"
@@ -61,16 +65,15 @@ export default function ExpensesForm() {
         value={formData.amount}
         placeholder="0.00"
       />
-
       <Input
         type="date"
         name="date"
         label="Date"
         onChange={handleChange}
-        value={formData.categoryId}
+        value={formData.date}
         placeholder="Date"
       />
-      <button className="button">Add Expense</button>
+      <Button>Add Expense</Button>
     </form>
   );
 }

@@ -9,19 +9,17 @@ export const Input = ({
   placeholder = "",
   ...props
 }) => (
-  <div className="field">
-    <label className="label">{label}</label>
-    <div className="control">
-      <input
-        {...props}
-        name={name}
-        type={type}
-        value={value}
-        className="input"
-        placeholder={placeholder}
-        onChange={onChange}
-      />
-    </div>
+  <div className="flex flex-col gap-y-1">
+    <label className="text-sm">{label}</label>
+    <input
+      {...props}
+      name={name}
+      type={type}
+      value={value}
+      placeholder={placeholder}
+      onChange={onChange}
+      className="border border-gray-300 p-2 rounded-md"
+    />
   </div>
 );
 
