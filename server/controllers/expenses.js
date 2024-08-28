@@ -18,9 +18,14 @@ export const getSingleExpense = async (req, res) => {
   }
 };
 
-export const getExpenses = async (req, res) => {
+export const getExpenses = async (_, res) => {
   try {
-    const expenses = await pool.query("SELECT * FROM expenses");
+    const expenses = await pool.query(`
+      SELECT date, jsonb_agg(jsonb_build_object('id', id, 'name', name, 'amount', amount, 'description', description)) as expenses
+      FROM expenses
+      GROUP BY date
+      ORDER BY date ASC
+    `);
 
     if (expenses.rows.length === 0) {
       return res.status(404).json({ message: "No expenses found" });

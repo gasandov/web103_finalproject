@@ -1,4 +1,6 @@
+import cors from "cors";
 import express from "express";
+import helmet from "helmet";
 
 import "./config/dotenv.js";
 
@@ -9,6 +11,8 @@ import usersRoute from "./routes/users.js";
 
 const app = express();
 
+app.use(cors());
+app.use(helmet());
 app.use(express.json());
 
 const PORT = process.env.PORT || 3000;
